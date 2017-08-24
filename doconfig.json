@@ -1,0 +1,32 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": [
+      "jsdoc",
+      "closure"
+    ]
+  },
+  "source": {
+    "includePattern": ".+\\.(js|vue)?$",
+    "excludePattern": "(^|\\/|\\\\)_",
+    "include": [
+      "src"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist",
+      "config",
+      "build"
+    ]
+  },
+  "opts": {
+    "template": "templates/default", // same as -t templates/default
+    "encoding": "utf8", // same as -e utf8
+    "destination": "./Docs/", // same as -d ./out/
+    "recurse": true // same as -r
+  },
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true
+  }
+}
